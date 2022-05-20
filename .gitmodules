@@ -1,0 +1,3 @@
+[submodule "EasyAutocomplete"]
+	path = EasyAutocomplete
+	url = https://github.com/pawelczak/EasyAutocomplete

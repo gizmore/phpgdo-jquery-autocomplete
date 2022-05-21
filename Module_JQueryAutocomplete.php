@@ -11,18 +11,18 @@ use GDO\Javascript\Module_Javascript;
  * @link https://github.com/pawelczak/EasyAutocomplete
  * 
  * @author gizmore
- * @version 6.10.1
+ * @version 7.0.1
  * @since 6.10.0
  */
 final class Module_JQueryAutocomplete extends GDO_Module
 {
-    public $module_priority = 45;
+    public int $priority = 45;
     
-    public function getDependencies() { return ['JQuery']; }
+    public function getDependencies() : array { return ['JQuery']; }
     
-    public function thirdPartyFolders() { return ['/EasyAutocomplete/']; }
+    public function thirdPartyFolders() : array { return ['/EasyAutocomplete/']; }
     
-    public function onIncludeScripts()
+    public function onIncludeScripts() : void
     {
         $min = Module_Javascript::instance()->cfgMinAppend();
 

@@ -21,7 +21,7 @@ $('.gdo-autocomplete-input').each(function(){
 		if (config.multiple) {
 			console.error('MULTUPLE COMPLETION NOT SUPPORTED YET.');
 		} else {
-			if (config.selected.id !== config.emptyValue) {
+			if (config.selected.id !== config.emptyVar) {
 				$this.val(config.selected.text);
 			} else {
 				$this.val('');

@@ -11,7 +11,7 @@ use GDO\Javascript\Module_Javascript;
  * @link https://github.com/pawelczak/EasyAutocomplete
  * 
  * @author gizmore
- * @version 7.0.1
+ * @version 7.0.0
  * @since 6.10.0
  */
 final class Module_JQueryAutocomplete extends GDO_Module

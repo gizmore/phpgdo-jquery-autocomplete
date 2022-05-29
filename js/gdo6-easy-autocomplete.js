@@ -5,7 +5,7 @@
  */
 $('.gdo-autocomplete-input').each(function(){
 	var $this = $(this);
-	var config  = $this.parent().attr('data-gdt-config');
+	var config  = $this.parent().attr('data-config');
 	config = JSON.parse(config);
 	var hiddenID = 'gdo-autocomplete-id-'+config.name;
 	var $hidden = $('#'+hiddenID);

@@ -18,9 +18,15 @@ final class Module_JQueryAutocomplete extends GDO_Module
 {
     public int $priority = 45;
     
-    public function getDependencies() : array { return ['JQuery']; }
+    public function getDependencies() : array
+    {
+    	return ['JQuery'];
+    }
     
-    public function thirdPartyFolders() : array { return ['/EasyAutocomplete/']; }
+    public function thirdPartyFolders() : array
+    {
+    	return ['/EasyAutocomplete/'];
+    }
     
     public function onIncludeScripts() : void
     {

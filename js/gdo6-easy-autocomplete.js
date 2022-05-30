@@ -33,8 +33,7 @@ $('.gdo-autocomplete-input').each(function(){
 			return config.completionHref + '&_fmt=json&query=' + query;
 		},
 		listLocation: function (data) {
-			console.log(data);
-			return data.json.data;
+			return data.data||[];
 		},
 		getValue: 'text',
 		requestDelay: 500,
@@ -81,5 +80,5 @@ $('.gdo-autocomplete-input').each(function(){
 	
 	$this.easyAutocomplete(options);
 	
-	$this.parent().css('width', '100%'); // fix bad width patch from lib.
+//	$this.parent().css('width', '100%'); // fix bad width patch from lib.
 });

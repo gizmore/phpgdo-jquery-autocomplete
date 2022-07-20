@@ -7,7 +7,7 @@ $('.gdo-autocomplete-input').each(function(){
 	var $this = $(this);
 	var config  = $this.attr('data-config');
 	config = JSON.parse(config);
-	var hiddenID = 'gdo-autocomplete-id-'+config.name;
+	var hiddenID = 'completion-'+config.name;
 	var $hidden = $('#'+hiddenID);
 	// if this input has a name, we need to switch names with the hidden input that holds the selected ID.
 	var name = $this.attr('name');

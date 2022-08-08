@@ -17,9 +17,11 @@ $('.gdo-autocomplete-input').each(function(){
 	}
 	$this.attr('placeholder', config.emptyLabel);
 	$hidden.val(config.selected.id);
+	$('#nocompletion_' + config.name).val('0');
+
 	if (config.selected) {
 		if (config.multiple) {
-			console.error('MULTUPLE COMPLETION NOT SUPPORTED YET.');
+			console.error('MULTIPLE COMPLETION NOT SUPPORTED YET.');
 		} else {
 			if (config.selected.id !== config.emptyVar) {
 				$this.val(config.selected.text);
@@ -61,7 +63,7 @@ $('.gdo-autocomplete-input').each(function(){
 	 */
 	$this.keydown(function(event) {
 		if (event.keyCode === 13) {
-			var $eaccul = $('#eac-container-'+config.id+' ul');
+			var $eaccul = $('#eac-container-'+config.name+' ul');
 			if ($eaccul.css('display') === 'none') {
         		$this.closest('form').find('input[type=submit]:first').click();
 			}
@@ -80,5 +82,5 @@ $('.gdo-autocomplete-input').each(function(){
 	
 	$this.easyAutocomplete(options);
 	
-//	$this.parent().css('width', '100%'); // fix bad width patch from lib.
+	$this.parent().css('width', 'auto'); // fix bad width patch from lib.
 });

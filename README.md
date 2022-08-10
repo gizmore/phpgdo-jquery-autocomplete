@@ -1,14 +1,14 @@
-# gdo6-jquery-autocomplete
-Easy Autocomplete wrapper module for the gdo6 framework.
+# phpgdo-jquery-autocomplete
 
-## Installation
-Follow the https://github.com/gizmore/gdo6 installation guide.
-Clone the module as follows
+Easy Autocomplete wrapper module for the GDOv7 framework.
 
-    cd GDO/
-    git clone --recursive https://github.com/gizmore/gdo6-jquery-autocomplete JQueryAutocomplete
-    
-Install the module via the admin panel or the installer.
 
-### Config
+## phpgdo-jquery-autocomplete: Installation
+
+Follow the GDOv7
+[installation guide](https://github.com/gizmore/phpgdo ).
+
+
+## phpgdo-jquery-autocomplete: Configuration
+
 There is no configuration for this module. 

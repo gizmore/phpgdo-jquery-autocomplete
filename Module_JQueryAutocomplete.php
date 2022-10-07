@@ -2,7 +2,6 @@
 namespace GDO\JQueryAutocomplete;
 
 use GDO\Core\GDO_Module;
-use GDO\Core\GDT_Array;
 
 /**
  * EasyAutocomplete wrapper module.

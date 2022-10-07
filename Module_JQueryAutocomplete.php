@@ -25,13 +25,14 @@ final class Module_JQueryAutocomplete extends GDO_Module
     
     public function thirdPartyFolders() : array
     {
-    	return ['/EasyAutocomplete/'];
+    	return ['EasyAutocomplete/'];
     }
     
     public function getLicenseFilenames() : array
     {
     	return [
     		'MIT.LICENSE',
+    		'EasyAutocomplete/LICENSE.txt',
     	];
     }
     
@@ -44,9 +45,4 @@ final class Module_JQueryAutocomplete extends GDO_Module
         $this->addJS("js/gdo7-easy-autocomplete.js");
     }
     
-    public function hookIgnoreDocsFiles(GDT_Array $ignore)
-    {
-        $ignore->data[] = 'GDO/JQueryAutocomplete/EasyAutocomplete/**/*';
-    }
-
 }

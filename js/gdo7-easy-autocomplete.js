@@ -5,7 +5,7 @@
  */
 $('.gdo-autocomplete-input').each(function(){
 	var $this = $(this);
-	var config  = $this.attr('data-config');
+	var config = $this.attr('data-config');
 	config = JSON.parse(config);
 	var hiddenID = 'completion-'+config.name;
 	var $hidden = $('#'+hiddenID);
@@ -39,6 +39,7 @@ $('.gdo-autocomplete-input').each(function(){
 		},
 		getValue: 'text',
 		requestDelay: 500,
+		minCharNumber: Math.max([2, config.min]),
 		placeholder: $(this).attr('placeholder'),
 	    template: {
 	        type: "custom",
